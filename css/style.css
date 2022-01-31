@@ -43,27 +43,22 @@
     width: 60px;
     height: 60px;
     background: red;
-    transition: width 1s ,height 1s , margin 1s ;
+    transition: transform 1s ;
 }
-#es-5{
-    transition: padding 1s;
-}
+
 .ex-5-square:hover {
-    width: 110px;
-    height: 110px;
-    margin: 0px;
-}
-.ex-5-square:hover #es-5{
-    padding: 0px;
+    transform: scale(2);
 }
 .ex-5-square:active{
-    width: 30px;
-    height: 30px;
-    margin: 30px;
+    transform: scale(.5);
 }
 
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
+    transition: filter;
+}
+.ex-6-img:hover{
+    filter: grayscale(1);
 }
 
 .ex-9-img {
