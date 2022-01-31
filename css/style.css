@@ -119,6 +119,7 @@
 .ex-11-icon:hover{
     animation: rotation-reverse 2s 1 linear;
 }
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
@@ -147,4 +148,98 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+}
+
+.ex-12-button:hover 
+.ex-12-top-white{
+    animation: border-rotation-half-top 2s 1 linear ;
+}
+.ex-12-button:hover 
+.ex-12-bottom-white{
+    animation: border-rotation-half-bottom 2s 1 linear ;
+}
+
+@keyframes border-rotation-half-top{
+    0%{
+        left : 10%;
+    }
+    50%{
+        left: 70%;
+    }
+    100%{
+        left: 10%;
+    }
+}
+@keyframes border-rotation-half-bottom{
+    0%{
+        right : 20%;
+    }
+    50%{
+        right: 70%;
+    }
+    100%{
+        right: 20%;
+    }
+}
+
+.ex-13-button:hover
+.ex-13-top-white{
+    animation: border-rotation-top 2s 1 linear;
+}
+.ex-13-button:hover
+.ex-13-bottom-white{
+    animation: border-rotation-bottom 2s 1 linear;
+}
+@keyframes border-rotation-top{
+    0%{
+        left : 10%;
+        top: -10px;
+    }
+    25%{
+        left: 80%;
+        top: -10px;
+    }
+    40%{
+        left: 80%;
+        top: 100%;
+    }
+    75%{
+        left: -10px;
+        top: 100%;
+    }
+    90%{
+        left: -10px;
+        top: -10px;
+    }
+    100%{
+        left: 10%;
+        top: -10px;
+    }
+}
+
+@keyframes border-rotation-bottom{
+    0%{
+        right : 20%;
+        bottom: -10px;
+    }
+    25%{
+        right: 80%;
+        bottom: -10px;
+    }
+    40%{
+        right: 80%;
+        bottom: 100%;
+    }
+    75%{
+        right: -10px;
+        bottom: 100%;
+    }
+    90%{
+        right: -10px;
+        bottom: -10px;
+    }
+    100%{
+        right: 20%;
+        bottom: -10px;
+    }
 }
