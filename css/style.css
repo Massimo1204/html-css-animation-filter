@@ -79,12 +79,45 @@
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    transition: border-radius 2s, transform 2s, filter 2s;
 }
+.ex-9-img:hover{
+    border-radius: 20px;
+    transform: scale(1.5);
+    filter: grayscale(.6) sepia(.6);
+}
+
 .ex-10-icon {
     font-size: 60px;
+    animation: rotation 1s infinite linear;
+}
+@keyframes rotation{
+    from{
+        transform: rotate(359deg);
+    }
+
+    to{
+        transform: rotate(0deg);
+    }
 }
 .ex-11-icon {
     font-size: 60px;
+}
+@keyframes rotation-reverse{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    90%{
+        transform: rotate(300deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.ex-11-icon:hover{
+    animation: rotation-reverse 2s 1 linear;
 }
 .ex-12-button, .ex-13-button {
     position: relative;
